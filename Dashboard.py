@@ -182,7 +182,7 @@ st.set_page_config(page_title="EV Analyzer", layout="wide")
 st.subheader("📈 Data Insights")
 
 # Load data
-df = pd.read_excel("Data/Electric_Data_Updated.xlsx")
+# df = pd.read_excel("Data/Electric_Data_Updated.xlsx")
 
 # Define features and target
 features = ['battery_capacity_kWh', 'efficiency_wh_per_km', 'torque_nm']
@@ -227,5 +227,6 @@ st.altair_chart(combined_chart, use_container_width=True)
 # Display the data
 st.subheader("📊 Dataset Preview")
 st.dataframe(df.head())
+
 
 
