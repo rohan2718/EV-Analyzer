@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_excel("Data\\with Feature.xlsx")
+df = pd.read_excel("with Feature.xlsx")
 
 # Title
 st.title("🔋 EV Range Predictor Dashboard")
@@ -227,6 +227,7 @@ st.altair_chart(combined_chart, use_container_width=True)
 # Display the data
 st.subheader("📊 Dataset Preview")
 st.dataframe(df.head())
+
 
 
 
